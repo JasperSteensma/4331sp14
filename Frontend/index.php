@@ -37,11 +37,15 @@
             background-color: rgba(128, 128, 128, 0.5);
           -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-          padding:5px;
+          padding:25px;
         }
 
         .main-content h1 {
-            font-size: 50px;
+            font-size: 45px;
+        }
+
+        .main-content p {
+          font-size: 20px;
         }
 
         .main-content a {

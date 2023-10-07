@@ -5,23 +5,40 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
     <title>Register</title>
-</head>
-<body>
-            <!-- Navigation Bar should be placed at the top so have it be the first thing in the body -->
-            <div class="container">
-            <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-                <a class="navbar-brand" href="../#">Chess Connect</a>
-                <div class="navbar">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                    <a class="nav-link" href="login/login.php">Login</a>
-                    </li>
-                </ul>
-                </div>
-            </nav>
-        </div>
-        <!--end of nav-->
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 2% 5%;
+        }
 
+        .navbar-brand, .nav-link {
+            font-size: 25px;
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-brand:hover, .nav-link:hover {
+            color: red; 
+        }
+
+        .card {
+            color: white;
+        }
+
+        .card-header {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body class="background-image2">
+    <div class="navbar">
+        <a class="navbar-brand" href="../#">Chess Connect</a>
+        <a class="nav-link" href="login/login.php">Login</a>
+    </div>
     <div class="container">
                  <?php
             $username = "";
@@ -98,7 +115,7 @@
 
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <div class="card mt-5">
+                <div class="card">
                     <div class="card-header">Register</div>
                     <div class="card-body">
                         <form method="POST" action="register.php">
